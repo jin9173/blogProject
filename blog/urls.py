@@ -9,7 +9,7 @@ urlpatterns = [
     # Example: /blog/post/ (same as /blog/)
     path('post/', views.PostLV.as_view(), name='post_list'),
     # Example: /blog/post/django-example/
-    re_path(r'^post(?P<slug>[-\w]+)/$', views.PostDV.as_view(), name='post_detail'),
+    re_path(r'^post/(?P<slug>[-\w]+)/$', views.PostDV.as_view(), name='post_detail'),
     # Example: /blog/archive/
     path('archive/', views.PostAV.as_view(), name='post_archive'),
     # Example: /blog/archive/2019/
